@@ -17,23 +17,31 @@ int main(){
     
     if(balance < 400){
         if(numCheck < 20){
-            total = fee2 + (numCheck * 0.10) + balance;
-            cout << "Your account is overdrawn!" << "\n";
+            total = fee2 + (numCheck * 0.10) ;
+            if (total > balance){
+                cout << "Your account is overdrawn!" << "\n";
+            }
             cout << "The bank fee this month is $ " << setprecision(2) << fixed << total << "\n";
         }
         if(numCheck >= 20 && numCheck <= 39){
-            total = fee2 + (numCheck * 0.08) + balance;
-            cout << "Your account is overdrawn!" << "\n";
+            total = fee2 + (numCheck * 0.08) ;
+            if (total > balance){
+                cout << "Your account is overdrawn!" << "\n";
+            }
             cout << "The bank fee this month is $ " << setprecision(2) << fixed << total << "\n";
         }
         if(numCheck >= 40 && numCheck <= 59){
-            total = fee2 + (numCheck * 0.06) + balance;
-            cout << "Your account is overdrawn!" << "\n";
+            total = fee2 + (numCheck * 0.06);
+            if (total > balance){
+                cout << "Your account is overdrawn!" << "\n";
+            }
             cout << "The bank fee this month is $ " << setprecision(2) << fixed << total << "\n";
         }
         if(numCheck >= 60){
-            total = fee2 + (numCheck * 0.04) + balance;
-            cout << "Your account is overdrawn!" << "\n";
+            total = fee2 + (numCheck * 0.04) ;
+            if (total > balance){
+                cout << "Your account is overdrawn!" << "\n";
+            }
             cout << "The bank fee this month is $ " << setprecision(2) << fixed << total << "\n";
         }
     }
