@@ -1,4 +1,16 @@
 //Huan Chen Assignment04-Program02
+// Program #1
+// Write a program that asks the user to enter a number within the range of 1 through 10. Use a switch statement to display the Roman numeral version of that number. Do not accept a number less than 1 or greater than 10.
+// • Use a switch statement
+// • Make sure that you tell the user if their input is not accepted
+// Sample Outputs:
+// Enter a number (1-10): 5
+// The Roman numeral version of 5 is V
+// Press any key to continue . . .
+// ========================================
+// Enter a number (1-10): 15
+// Enter a number in the range 1 through 10
+// Press any key to continue . . .
 #include <iostream>
 using namespace std;
 
